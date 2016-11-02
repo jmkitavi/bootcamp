@@ -19,14 +19,14 @@ class BinarySearch(list):
             half = len(l) / 2
             # print '{0} loop half is: {1} num is {2} and half num is: {3} '.format(str(count), num, half, l[half])
             if num == l[half]:
-                print l
+                #print l
                 l = []
             elif num > l[half - 1]:
                 l = l[half:len(l) - 1]
-                print l
+                #print l
             else:
                 l = l[0:half]
-                print l
+                #print l
         try:
             index = self.index(num)
         except ValueError:
